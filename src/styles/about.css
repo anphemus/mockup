@@ -1,0 +1,67 @@
+.about-container{
+
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2,250px);
+    margin: 50px 0 100px 0;
+}
+
+.about-container >div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: url('../assets/aboutus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.about-container > div > div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(25, 24, 24, 0.293);
+}
+
+.about-container h2{
+    font-size: 3rem;
+    color: white;
+}
+.about-container > div:nth-child(1){
+    grid-column: span 2;
+}
+.about-container > div:nth-child(5){
+    grid-column: span 2;
+}
+.about-container > div:nth-child(3){
+    grid-row: span 2;
+}
+.about-container >div button{
+    width: 250px;
+    height: 30px;
+    max-width: 100%;
+    margin-top: 10px;
+    background-color: yellow;
+    border-radius: 5px;
+    border: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.about-container > div:hover > div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}

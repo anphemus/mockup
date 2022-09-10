@@ -1,0 +1,14 @@
+.slider{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+
+}
+.slider::-webkit-scrollbar {
+    display: block;
+    width: 30em;
+    overflow: auto;
+}
